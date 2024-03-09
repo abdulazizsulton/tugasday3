@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MacActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMac"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/ivMacM1"
+                android:src="@drawable/macm1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+
+            <TextView
+                android:id="@+id/tvMacM1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="8dp"
+                android:text="MacBook M1"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/ivMacM1"
+                app:layout_constraintTop_toTopOf="@id/ivMacM1" />
+
+            <TextView
+                android:id="@+id/tvMacM1price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="64dp"
+                android:text="Harga : Rp 12.499.000"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/ivMacM1"
+                app:layout_constraintTop_toBottomOf="@id/tvDescriptionMacM1" />
+
+            <TextView
+                android:id="@+id/tvDescriptionMacM1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="Laptop Apple yang paling tipis dan ringan, bertenaga super dengan chip Apple M1."
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/tvMacM1price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/ivMacM1"
+                app:layout_constraintTop_toBottomOf="@id/tvMacM1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMacM1pro"
+            app:layout_constraintTop_toBottomOf="@id/cardMac"
+            app:layout_constraintStart_toStartOf="@id/cardMac"
+            app:layout_constraintEnd_toEndOf="@id/cardMac"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMacM1pro"
+                    android:src="@drawable/macm1pro"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvMacM1pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="8dp"
+                    android:text="MacBook M1 Pro"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM1pro"
+                    app:layout_constraintTop_toTopOf="@id/ivMacM1pro" />
+
+                <TextView
+                    android:id="@+id/tvMacM1proprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:text="Harga : Rp 16.499.000 "
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM1pro"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescriptionMacM1pro" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionMacM1pro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="Chip Apple M1 mendefinisikan ulang MacBook Pro 13 inci. Dilengkapi CPU 8-core."
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/tvMacM1proprice"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM1pro"
+                    app:layout_constraintTop_toBottomOf="@id/tvMacM1pro" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMacM2"
+            app:layout_constraintTop_toBottomOf="@id/cardMacM1pro"
+            app:layout_constraintStart_toStartOf="@id/cardMacM1pro"
+            app:layout_constraintEnd_toEndOf="@id/cardMacM1pro"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMacM2"
+                    android:src="@drawable/macm2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvMacM2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="8dp"
+                    android:text="MacBook M2"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM2"
+                    app:layout_constraintTop_toTopOf="@id/ivMacM2" />
+
+                <TextView
+                    android:id="@+id/tvMacM2price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:text="Harga : Rp 18.999.000 "
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM2"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescriptionMacM2" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionMacM2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="Bertenaga super berkat chip M2 generasi berikutnya, MacBook Air yang didesain ulang menggabungkan performa "
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/tvMacM2price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM2"
+                    app:layout_constraintTop_toBottomOf="@id/tvMacM2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMacM2pro"
+            app:layout_constraintTop_toBottomOf="@id/cardMacM2"
+            app:layout_constraintStart_toStartOf="@id/cardMacM2"
+            app:layout_constraintEnd_toEndOf="@id/cardMacM2"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMacM2pro"
+                    android:src="@drawable/macm2pro"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvMacM2pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="8dp"
+                    android:text="MacBook M2 Pro"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM2pro"
+                    app:layout_constraintTop_toTopOf="@id/ivMacM2pro" />
+
+                <TextView
+                    android:id="@+id/tvMacM2proprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:text="Harga ; Rp 21.999.000 "
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM2pro"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescriptionMacM2pro" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionMacM2pro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="MacBook Pro 13 inci lebih andal dari sebelumnya. Bertenaga super berkat chip M2 generasi berikutnya."
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/tvMacM2proprice"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM2pro"
+                    app:layout_constraintTop_toBottomOf="@id/tvMacM2pro" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMacM3"
+            app:layout_constraintTop_toBottomOf="@id/cardMacM2pro"
+            app:layout_constraintStart_toStartOf="@id/cardMacM2pro"
+            app:layout_constraintEnd_toEndOf="@id/cardMacM2pro"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivMacM3"
+                    android:src="@drawable/macm3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvMacM3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="8dp"
+                    android:text="MacBook M3"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM3"
+                    app:layout_constraintTop_toTopOf="@id/ivMacM3" />
+
+                <TextView
+                    android:id="@+id/tvMacM3price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:text="Harga : Rp 28.999.000 "
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM3"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescriptionMacM3" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionMacM3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="MacBook Pro 14 inci melesat berkat M3, chip luar biasa canggih yang menghadirkan kecepatan dan kemampuan yang tidak main-main. "
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/tvMacM3price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/ivMacM3"
+                    app:layout_constraintTop_toBottomOf="@id/tvMacM3" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

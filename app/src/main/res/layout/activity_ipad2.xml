@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IpadActivity2">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIpad"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/ivIpadMini"
+                android:src="@drawable/ipadmini"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+
+            <TextView
+                android:id="@+id/tvIpadMini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="8dp"
+                android:text="Ipad Mini"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/ivIpadMini"
+                app:layout_constraintTop_toTopOf="@id/ivIpadMini" />
+
+            <TextView
+                android:id="@+id/tvIpadMiniprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="64dp"
+                android:text="Harga : Rp 5.789.000 "
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/ivIpadMini"
+                app:layout_constraintTop_toBottomOf="@id/tvDescriptionIpadMini" />
+
+            <TextView
+                android:id="@+id/tvDescriptionIpadMini"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="iPad mini baru. Menghadirkan desain layar sepenuhnya dengan layar Liquid Retina 8,3 inci. Chip A14 Bionic dengan Neural Engine."
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/tvIpadMiniprice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/ivIpadMini"
+                app:layout_constraintTop_toBottomOf="@id/tvIpadMini" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIpadAir"
+        app:layout_constraintTop_toBottomOf="@id/cardIpad"
+        app:layout_constraintStart_toStartOf="@id/cardIpad"
+        app:layout_constraintEnd_toEndOf="@id/cardIpad"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivIpadAir"
+                android:src="@drawable/ipadair"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+
+            <TextView
+                android:id="@+id/tvIpadAir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="8dp"
+                android:text="Ipad Air"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/ivIpadAir"
+                app:layout_constraintTop_toTopOf="@id/ivIpadAir" />
+
+            <TextView
+                android:id="@+id/tvIpadAirprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="64dp"
+                android:text="Harga : Rp 7.999.000 "
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/ivIpadAir"
+                app:layout_constraintTop_toBottomOf="@id/tvDescriptionIpadAir" />
+
+            <TextView
+                android:id="@+id/tvDescriptionIpadAir"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="IiPad Air dengan layar Liquid Retina 10,9 inci yang menghanyutkan. Dilengkapi Touch ID, kamera canggih."
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/tvIpadAirprice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/ivIpadAir"
+                app:layout_constraintTop_toBottomOf="@id/tvIpadAir" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIpadM1"
+        app:layout_constraintTop_toBottomOf="@id/cardIpadAir"
+        app:layout_constraintStart_toStartOf="@id/cardIpadAir"
+        app:layout_constraintEnd_toEndOf="@id/cardIpadAir"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivIpadM1"
+                android:src="@drawable/ipadm1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+
+            <TextView
+                android:id="@+id/tvIpadM1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="8dp"
+                android:text="Ipad M1"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/ivIpadM1"
+                app:layout_constraintTop_toTopOf="@id/ivIpadM1" />
+
+            <TextView
+                android:id="@+id/tvIpadM1price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="64dp"
+                android:text="Harga : Rp 10.999.999 "
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/ivIpadM1"
+                app:layout_constraintTop_toBottomOf="@id/tvDescriptionIpadM1" />
+
+            <TextView
+                android:id="@+id/tvDescriptionIpadM1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="iPad M1 menghadirkan peforma yang lebih kencang, resoliusi tinggi, layar besar dengan chipset A16 Bionic."
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/tvIpadM1price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/ivIpadM1"
+                app:layout_constraintTop_toBottomOf="@id/tvIpadM1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIpadM2"
+        app:layout_constraintTop_toBottomOf="@id/cardIpadM1"
+        app:layout_constraintStart_toStartOf="@id/cardIpadM1"
+        app:layout_constraintEnd_toEndOf="@id/cardIpadM1"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivIpadM2"
+                android:src="@drawable/ipadm2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+
+            <TextView
+                android:id="@+id/tvIpadM2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="8dp"
+                android:text="Ipad M2"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/ivIpadM2"
+                app:layout_constraintTop_toTopOf="@id/ivIpadM2" />
+
+            <TextView
+                android:id="@+id/tvIpadM2price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="64dp"
+                android:text="Harga : Rp 12.999.000 "
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/ivIpadM2"
+                app:layout_constraintTop_toBottomOf="@id/tvDescriptionIpadM2" />
+
+            <TextView
+                android:id="@+id/tvDescriptionIpadM2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="iPad Pro M2 adalah seri tablet terbaru besutan Apple yang rilis di tahun 2022. Dilengkapi chipset M2 ber-fabrikasi 5 nm."
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/tvIpadM2price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/ivIpadM2"
+                app:layout_constraintTop_toBottomOf="@id/tvIpadM2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIpadPro"
+        app:layout_constraintTop_toBottomOf="@id/cardIpadM2"
+        app:layout_constraintStart_toStartOf="@id/cardIpadM2"
+        app:layout_constraintEnd_toEndOf="@id/cardIpadM2"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/cardview_dark_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivIpadPro"
+                android:src="@drawable/ipadpro"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+
+            <TextView
+                android:id="@+id/tvIpadPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="8dp"
+                android:text="Ipad Pro"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/ivIpadPro"
+                app:layout_constraintTop_toTopOf="@id/ivIpadPro" />
+
+            <TextView
+                android:id="@+id/tvIpadProprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="64dp"
+                android:text="Harga : Rp 14.999.999"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/ivIpadPro"
+                app:layout_constraintTop_toBottomOf="@id/tvDescriptionIpadPro" />
+
+            <TextView
+                android:id="@+id/tvDescriptionIpadPro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="iPad Pro. Dengan performa yang menakjubkan, konektivitas nirkabel super cepat, dan pengalaman Apple Pencil generasi berikutnya"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/tvIpadProprice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@id/ivIpadPro"
+                app:layout_constraintTop_toBottomOf="@id/tvIpadPro" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

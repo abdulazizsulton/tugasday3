@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hpactivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardIphone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivIphone13"
+                    android:src="@drawable/iphone13"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvIphone13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Iphone 13"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone13"
+                    app:layout_constraintTop_toTopOf="@id/ivIphone13" />
+
+                <TextView
+                    android:id="@+id/tvIphone13price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:text="Harga : Rp 9.999.999 "
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone13"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescriptionIphone13" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionIphone13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="iPhone 13. Sistem kamera ganda paling canggih yang pernah ada di iPhone. Chip A15 Bionic yang secepat kilat."
+
+
+
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/tvIphone13price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone13"
+                    app:layout_constraintTop_toBottomOf="@id/tvIphone13" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardIphone14"
+            app:layout_constraintTop_toBottomOf="@id/cardIphone"
+            app:layout_constraintStart_toStartOf="@id/cardIphone"
+            app:layout_constraintEnd_toEndOf="@id/cardIphone"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivIphone14"
+                    android:src="@drawable/iphone14"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvIphone14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Iphone 14"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone14"
+                    app:layout_constraintTop_toTopOf="@id/ivIphone14" />
+
+                <TextView
+                    android:id="@+id/tvIphone14price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:text="Harga : Rp 12.999.999 "
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone14"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescriptionIphone14" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionIphone14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="iPhone 14. Dengan sistem kamera ganda paling hebat di iPhone. iPhone dengan iOS 16 Bionic"
+
+
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/tvIphone14price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone14"
+                    app:layout_constraintTop_toBottomOf="@id/tvIphone14" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardIphone15"
+            app:layout_constraintTop_toBottomOf="@id/cardIphone14"
+            app:layout_constraintStart_toStartOf="@id/cardIphone14"
+            app:layout_constraintEnd_toEndOf="@id/cardIphone14"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivIphone15"
+                    android:src="@drawable/iphone15"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvIphone15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Iphone 15"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone15"
+                    app:layout_constraintTop_toTopOf="@id/ivIphone15" />
+
+                <TextView
+                    android:id="@+id/tvIphone15price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:text="Harga : Rp 14.999.999 "
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone15"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescriptionIphone15" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionIphone15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="iPhone 15 menghadirkan Dynamic Island, kamera Utama 48 MP, dan USB-C — semuanya dalam desain aluminium."
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/tvIphone15price"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone15"
+                    app:layout_constraintTop_toBottomOf="@id/tvIphone15" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardIphone15pro"
+            app:layout_constraintTop_toBottomOf="@id/cardIphone15"
+            app:layout_constraintStart_toStartOf="@id/cardIphone15"
+            app:layout_constraintEnd_toEndOf="@id/cardIphone15"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivIphone15pro"
+                    android:src="@drawable/iphone15pro"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvIphone15pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Iphone 15 Pro"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone15pro"
+                    app:layout_constraintTop_toTopOf="@id/ivIphone15pro" />
+
+                <TextView
+                    android:id="@+id/tvIphone15proprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:text="Harga : Rp 19.999.999 "
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone15pro"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescriptionIphone15pro" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionIphone15pro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="iPhone 15 Pro. Lahir dari titanium dan dilengkapi chip A17 Bionic,
+                                   tombol Tindakan yang dapat disesuaikan."
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/tvIphone15proprice"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone15pro"
+                    app:layout_constraintTop_toBottomOf="@id/tvIphone15pro" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardIphone15promax"
+            app:layout_constraintTop_toBottomOf="@id/cardIphone15pro"
+            app:layout_constraintStart_toStartOf="@id/cardIphone15pro"
+            app:layout_constraintEnd_toEndOf="@id/cardIphone15pro"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/cardview_dark_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivIphone15promax"
+                    android:src="@drawable/iphone15promaxx"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+
+
+                <TextView
+                    android:id="@+id/tvIphone15promax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Iphone 15 ProMax"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone15promax"
+                    app:layout_constraintTop_toTopOf="@id/ivIphone15promax" />
+
+                <TextView
+                    android:id="@+id/tvIphone15promaxprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="64dp"
+                    android:text="Harga : Rp 25.999.999 "
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone15promax"
+                    app:layout_constraintTop_toBottomOf="@id/tvDescriptionIphone15promax" />
+
+                <TextView
+                    android:id="@+id/tvDescriptionIphone15promax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="iPhone 15 Pro Max. Lahir dari titanium dan dilengkapi chip A17 Bionic,tombol Tindakan yang dapat disesuaikan."
+
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@id/tvIphone15promaxprice"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@id/ivIphone15promax"
+                    app:layout_constraintTop_toBottomOf="@id/tvIphone15promax" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
